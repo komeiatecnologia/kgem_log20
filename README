@@ -1,0 +1,24 @@
+Gem para geração de logs em geral, especializada na geração de logs web(request/response)
+
+Pra utiliza-la basta instalar a gem kgem_log.
+
+Usando bundle adicione ao Gemfile: gem 'kgem_log'
+
+Usando RubyGems: gem install kgem_log
+
+Para customizar basta incluir no initializers do Rails o código ruby abaixo,
+alterando os valores que julgar necessário, os valores apresentadas são os valores default da gem.
+
+KLog::Log.configuration do |config|
+  ## Active or Desactive kgem_log
+  config.active = true
+
+  ## Logger default when running in not Rails app
+  config.logger = Logger.new(STDOUT)
+
+  ## Label default
+  config.label = "Default Logging"
+
+  ## Log level (info, warn, error)
+  config.level = :info
+end
