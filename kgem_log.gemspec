@@ -1,8 +1,6 @@
-require 'lib/version'
-
 Gem::Specification.new do |s|
   s.name        = "kgem_log"
-  s.version     = KLog::VERSION
+  s.version     = "0.1.2"
   s.description = "Gem genérica para gerar log"
   s.summary     = "Log"
   s.author      = "Komeia Interativa"
